@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="quiz2.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    
 </head>
 <body>
     <div id="container">
         <div id="title">
             <p style="margin: 0px;">CSS Quiz-2</p>
         </div>
-        <div id="left_box" style="position: fixed;">
+        <div id="left_box">
             <ul id="left_menu">
-                <li>Home</li>
-                <li>menu1</li>
-                <li>menu2</li>
-                <li>menu3</li>
+                <li class="left_li">Home</li>
+                <li class="left_li">menu1</li>
+                <li class="left_li">menu2</li>
+                <li class="left_li">menu3</li>
             </ul>
         </div>
         <div id="contents">
@@ -34,5 +36,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(".left_li").hover(function(){
+            $(this).css("background-color","red")
+        }, function(){
+            $(this).css("background-color", "lightgray")
+        });
+        </script>
 </body>
 </html>

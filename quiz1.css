@@ -1,6 +1,10 @@
 *{
     font-family: serif;
 }
+#container{
+    width: 800px;
+    margin: 0px auto;
+}
 #title{
     color: white;
     text-align: center;
